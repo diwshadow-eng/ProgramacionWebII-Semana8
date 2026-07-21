@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #003366;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background-color: #d4a017;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#message-container {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+#notification-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#cart-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #003366;
+    border-radius: 10px;
+}
+
+#results-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-card {
+    background-color: white;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+    color: #003366;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+.add-cart-btn {
+    background-color: #003366;
+    color: white;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-cart-btn:hover {
+    opacity: 0.9;
+}
+
+.review-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #003366;
+    border-radius: 10px;
+}
+
+.review-section form {
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-section input,
+.review-section select,
+.review-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.review-section textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.review-message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.pedido-demo {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #003366;
+    border-radius: 10px;
+}
+
+.pedido-info {
+    margin-top: 15px;
+    text-align: left;
+    display: inline-block;
+    padding: 15px;
+}
+
+.pedido-formulario {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #003366;
+    border-radius: 10px;
+}
+
+.pedido-formulario form {
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pedido-formulario input,
+.pedido-formulario select,
+.pedido-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.pedido-formulario textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.pedido-resultado {
+
+    margin-top: 20px;
+    padding: 15px;
+
+    background-color: #f4f4f4;
+
+    border: 2px solid #003366;
+
+    border-radius: 8px;
+
+    text-align: left;
+
+    display: inline-block;
+
+    color: #003366;
+
+}
+
+.session-info {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: white;
+
+    border: 2px solid #003366;
+
+    border-radius: 10px;
+
+}
+
+.session-cart{
+
+    margin-top:30px;
+
+    padding:20px;
+
+    background:white;
+
+    border:2px solid #003366;
+
+    border-radius:10px;
+
+}
+
+.session-cart form{
+
+    margin-bottom:20px;
+
+}
+
+.session-cart ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.session-cart li{
+
+    background:#f4f4f4;
+
+    margin:8px auto;
+
+    width:60%;
+
+    padding:10px;
+
+    border-radius:6px;
+
+    border:1px solid #003366;
+
+}
