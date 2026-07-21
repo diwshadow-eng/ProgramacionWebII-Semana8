@@ -206,13 +206,37 @@ $pedidoEjemplo = new Pedido(
 
 $mensajePedido = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["registrarPedido"])) {
+if (
+    empty($descripcionPedido) ||
+    empty($tipoPedido) ||
+    empty($producto) ||
+    empty($unidades)
+) {
 
-    $descripcionPedido = trim($_POST["descripcionPedido"]);
-    $tipoPedido = trim($_POST["tipoPedido"]);
-    $producto = trim($_POST["producto"]);
-    $unidades = trim($_POST["unidades"]);
-    $observaciones = trim($_POST["observaciones"]);
+    $mensajePedido = "Debe completar todos los campos obligatorios.";
+
+} elseif (!is_numeric($unidades) || $unidades < 1) {
+
+    $mensajePedido = "La cantidad de unidades debe ser mayor que cero.";
+
+} elseif ($unidades > 100) {
+
+    $mensajePedido = "No es posible solicitar más de 100 unidades en un solo pedido.";
+
+} else {
+
+    $pedidoCliente = new Pedido(
+        htmlspecialchars($descripcionPedido),
+        htmlspecialchars($tipoPedido),
+        htmlspecialchars($producto),
+        (int)$unidades,
+        htmlspecialchars($observaciones)
+    );
+
+    $mensajePedido = "
+        <h3>Pedido registrado correctamente</h3>
+        " . $pedidoCliente->mostrarPedido();
+
 
     if (
         empty($descripcionPedido) ||
