@@ -385,6 +385,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["registrarCompra"])) {
 <body>
 
     <h1>Tienda de Comercio Electrónico</h1>
+    <h2>Gestión de Pedidos - Nueva Funcionalidad</h2>
 
     <section class="session-info">
 
